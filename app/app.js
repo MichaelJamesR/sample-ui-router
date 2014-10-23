@@ -15,36 +15,37 @@
     
     $stateProvider
       .state('/', {
-        templateUrl: "app/app.tpl.html"
+        url: '/',
+        templateUrl: 'app/app.tpl.html'
       })
       
       .state('nested-views-1', {
-        url: "/nested-views-1",
-        templateUrl: "app/demos/nested-views-1/nested-views-1.tpl.html"
+        url: '/nested-views-1',
+        templateUrl: 'app/demos/nested-views-1/nested-views-1.tpl.html'
       })
       
       .state('nested-views-1.home', {
-        url: "/home",
-        templateUrl: "app/demos/nested-views-1/home/home.tpl.html"
+        url: '/home',
+        templateUrl: 'app/demos/nested-views-1/home/home.tpl.html'
       })
       
       .state('nested-views-1.home.list', {
-        url: "/list",
-        templateUrl: "app/demos/nested-views-1/home/list/list.tpl.html",
+        url: '/list',
+        templateUrl: 'app/demos/nested-views-1/home/list/list.tpl.html',
         controller: function($scope) 
         {
-          $scope.items = ["A", "List", "Of", "Items"];
+          $scope.items = ['A', 'List', 'Of', 'Items'];
         }
       })
       
       .state('nested-views-1.about', {
-        url: "/about",
-        templateUrl: "app/demos/nested-views-1/about/about.tpl.html"
+        url: '/about',
+        templateUrl: 'app/demos/nested-views-1/about/about.tpl.html'
       })
       
       .state('nested-views-1.about.details', {
-        url: "/details",
-        templateUrl: "app/demos/nested-views-1/about/details/details.tpl.html",
+        url: '/details',
+        templateUrl: 'app/demos/nested-views-1/about/details/details.tpl.html',
         controller: function($scope) 
         {
           $scope.details = {
