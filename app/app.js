@@ -4,9 +4,13 @@
 
   module.config(function($stateProvider, $urlRouterProvider)
   {
-    $urlRouterProvider.otherwise("/home");
+    $urlRouterProvider.otherwise('');
     
     $stateProvider
+    .state('', {
+      url: ''
+    })
+    
     .state('home', {
       url: "/home",
       templateUrl: "app/features/home/home.tpl.html"
