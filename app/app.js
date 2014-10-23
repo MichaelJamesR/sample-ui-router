@@ -54,8 +54,14 @@
             Version: '0.0.1'
           };
         }
-      });
-    
+      })
+      
+      .state('parallel-views-1', {
+        url: '/parallel-views-1',
+        templateUrl: 'app/demos/parallel-views-1/parallel-views-1.tpl.html'
+      })
+      
+      ;
   }]);
 
 })();
