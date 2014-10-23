@@ -4,13 +4,9 @@
 
   module.config(function($stateProvider, $urlRouterProvider)
   {
-    $urlRouterProvider.otherwise('');
+    $urlRouterProvider.otherwise('nested-views-1');
     
     $stateProvider
-    .state('', {
-      url: ''
-    })
-    
     .state('nested-views-1', {
       url: "/nested-views-1",
       templateUrl: "app/demos/nested-views-1/nested-views-1.tpl.html"
