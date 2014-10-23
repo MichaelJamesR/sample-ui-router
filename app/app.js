@@ -9,12 +9,12 @@
     $stateProvider
     .state('home', {
       url: "/home",
-      templateUrl: "/app/features/home/home.tpl.html"
+      templateUrl: "app/features/home/home.tpl.html"
     })
     
     .state('home.list', {
       url: "/list",
-      templateUrl: "/app/features/home/list/list.tpl.html",
+      templateUrl: "app/features/home/list/list.tpl.html",
       controller: function($scope) 
       {
         $scope.items = ["A", "List", "Of", "Items"];
@@ -23,12 +23,12 @@
     
     .state('about', {
       url: "/about",
-      templateUrl: "/app/features/about/about.tpl.html"
+      templateUrl: "app/features/about/about.tpl.html"
     })
     
     .state('about.details', {
       url: "/details",
-      templateUrl: "/app/features/about/details/details.tpl.html",
+      templateUrl: "app/features/about/details/details.tpl.html",
       controller: function($scope) 
       {
         $scope.details = {
